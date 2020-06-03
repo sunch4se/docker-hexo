@@ -5,7 +5,7 @@ MAINTAINER Benjamin Huss <b.huss@gmx.de>
 COPY --from=resin/aarch64-alpine:latest ["/usr/bin/qemu*", "/usr/bin/resin-xbuild*", "/usr/bin/cross-build*",  "/usr/bin/"]
 RUN [ "cross-build-start" ]
 
-# Set the server port as an environmental
+# Set server port as an environmental
 ENV HEXO_SERVER_PORT=4000
 
 # Install requirements
